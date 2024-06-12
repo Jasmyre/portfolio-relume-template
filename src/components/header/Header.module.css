@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 80px;
+
+}
+
+.header .logo {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+
+}
+
+.header .logo .logo_name {
+  padding: 0;
+  margin: 0;
+
+}
+
+.header .logo .product_name {
+  padding: 0;
+  margin: 0;
+}
+
+.header .navigation {
+  display: flex;
+  gap: 16px;
+
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
