@@ -1,21 +1,29 @@
 .button {
-  min-width: 120px;
-  aspect-ratio: 14 / 5;
+  padding: 12px 24px;
+  aspect-ratio: 7 / 2.25;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
+  background: #466acd;
   border: 1px solid #4f4f4f;
   border-radius: 4px;
   transition: all 0.2s ease-in;
   position: relative;
   overflow: hidden;
-  font-size: 19px;
+  font-size: 16px;
   cursor: pointer;
-  color: black;
+  color: white;
   z-index: 1;
   font-weight: 400;
 
+}
+
+.button span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:before {
@@ -29,7 +37,7 @@
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 50%;
   display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.125s cubic-bezier(0.55, 0, 0.1, 1) 0s;
   z-index: -1;
 }
 
@@ -44,7 +52,7 @@
   background-color: #39bda7;
   border-radius: 50%;
   display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.125s cubic-bezier(0.55, 0, 0.1, 1) 0s;
   z-index: -1;
 }
 

@@ -6,8 +6,10 @@ function Header() {
   return (
     <div className={styles.header}>
       <div className={styles.logo}>
-        <h1 className={styles.logo_name}>Jasmyre</h1>
-        <p className={styles.product_name}>PORTFOLIO</p>
+        <a href="#home">
+          <h1 className={styles.logo_name}>Jasmyre</h1>
+          <p className={styles.product_name}>PORTFOLIO</p>
+        </a>
       </div>
       <nav className={styles.navigation}>
         <ul>
@@ -16,7 +18,7 @@ function Header() {
           <li><a href="#portfolio">Portfolio</a></li>
         </ul>
         <div className="navigation-cta">
-          <CTAButton text="text"></CTAButton>
+          <CTAButton text="Get Started"></CTAButton>
         </div>
       </nav>
     </div>

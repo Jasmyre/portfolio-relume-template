@@ -1,7 +1,10 @@
+
+
 .header {
   display: flex;
   justify-content: space-between;
   padding: 8px 80px;
+  border-bottom: solid 1px #5f5f5f;
 
 }
 
@@ -13,25 +16,50 @@
 
 }
 
-.header .logo .logo_name {
+.header .logo a {
+  text-decoration: none;
+  color: #0f0f0f;
+}
+
+.header .logo a .logo_name {
   padding: 0;
   margin: 0;
 
 }
 
-.header .logo .product_name {
+.header .logo a .product_name {
   padding: 0;
   margin: 0;
 }
 
 .header .navigation {
   display: flex;
-  gap: 16px;
+  gap: 24px;
 
 }
 
 .navigation ul {
   display: flex;
   list-style: none;
-  gap: 16px;
+  gap: 32px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5 ease;
+}
+
+.navigation ul li a::after {
+  content: "";
+  background: #0f0f0f;
+  height: 1px;
+  width: 0%;
+  transition: all 0.075s ease 0s;
+}
+
+.navigation ul li a:hover::after {
+  width: 100%;
 }
