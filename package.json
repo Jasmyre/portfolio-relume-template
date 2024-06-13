@@ -9,7 +9,10 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "release": "npm run build && git push -u origin",
-    "pull": "git pull --rebase"
+    "pull": "git pull --rebase",
+    "major": "npm version major",
+    "minor": "npm version minor",
+    "patch": "npm version patch"
   },
   "dependencies": {
     "prop-type": "^0.0.1",
